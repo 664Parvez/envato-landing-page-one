@@ -189,6 +189,13 @@ body {
 /* Trusted Partner */
 
 
+/* Contact */
+#contact_us {
+    padding: 50px 0;
+}
+/* Contact */
+
+
 /* Footer */
 footer {
     background-color: var(--first-color);
