@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
+    --first-color: #0F1322;
+    --second-color: #92D4E0;
+    --third-color: #DABDA9;
+    --forth-color: #B8BFFF;
+    --white-color: #ffffff;
+    --offwhite: #fdfdf5;
+    --font: "DM Sans", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+p, span, a {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 55px;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 20px;
+    color: var(--first-color);
+    background: linear-gradient(90deg, var(--second-color), var(--forth-color));
+    display: inline;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+body {
+    font-family: var(--font);
+    background-color: var(--offwhite);
+}
+
+.btn {
+    background: linear-gradient(90deg, var(--second-color), var(--forth-color));
+    color: var(--first-color);
+}
+.btn:hover {
+    background: var(--white-color);
+    color: var(--first-color);
+}
+
+
+/* Navbar */
+#navbar {
+    width: 100%;
+    padding: 15px 10px;
+    position: fixed;
+    top: 0;
+    z-index: 888;
+}
+#navbar img {
+    width: 200px;
+    height: auto;
+}
+#navbar ul li {
+    display: inline-block;
+    padding-right: 15px;
+}
+#navbar ul li:last-child {
+    padding-right: 0;
+}
+#navbar ul li .nav-menu {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+
+/* how we work */
+#how_we_work {
+    padding: 50px 0;
+}
+#how_we_work .card {
+    padding: 10px;
+}
+/* how we work */
+
+
+/* Testimonial */
+#testimonial {
+    padding: 50px 0;
+}
+/* Testimonial */
+
+
+/* Our Work */
+#recent_work {
+    padding: 50px;
+}
+/* Our Work */
+
+
+/* Counter */
+#counter {
+    background-color: var(--first-color);
+    padding: 50px 0;
+    margin: 50px 0;
+}
+#counter .card {
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+}
+#counter .card h3 {
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--first-color);
+}
+#counter .card p {
+    margin-bottom: 0;
+}
+/* Counter */
+
+
+/* Upgrate */
+#upgrate {
+    padding: 50px;
+    margin: 50px;
+    background-color: var(--first-color);
+    border-radius: 30px;
+}
+#upgrate p {
+    color: var(--white-color);
+    padding: 15px 0;
+}
+#upgrate h2 {
+    color: var(--white-color);
+}
+#upgrate .purchase_btn {
+    background-color: var(--third-color);
+}
+/* Upgrate */
+
+
+/* Pricing */
+#pricing {
+    padding: 50px 0;
+}
+/* Pricing */
+
+
+/* Our Team */
+#our_team {
+    padding: 50px 0;
+}
+/* Our Team */
+
+
+/* MCQ */
+#mcq {
+    padding: 50px 0;
+}
+/* MCQ */
+
+
+/* Blog */
+#blog {
+    padding: 50px 0;
+}
+/* blog */
+
+
+/* Trusted Partner */
+#partner {
+    padding: 50px 0;
+}
+/* Trusted Partner */
+
+
+/* Footer */
+footer {
+    background-color: var(--first-color);
+    padding: 70px 10px;
+    color: var(--white-color);
+}
+footer img {
+    width: 200px;
+    height: auto;
+}
+footer .footer_first p {
+    color: var(--white-color);
+}
+footer h4 {
+    font-weight: 600;
+    color: var(--white-color);
+}
+footer .footer_second ul li a {
+    color: var(--white-color);
+    text-decoration: none;
+}
+footer .footer_second ul li {
+    transition: 0.5s ease;
+}
+footer .footer_second ul li:hover {
+    transform: translateX(10px);
+    transition: 0.5s ease;
+}
+footer .footer_third ul li a {
+    color: var(--white-color);
+    text-decoration: none;
+}
+footer .footer_forth p {
+    color: var(--white-color);
+}   
+footer .footer_third .social_media li {
+    display: inline-block;
+    padding-right: 15px;
+}
+footer .footer_third .social_media li:last-child {
+    padding-right: 0px;
+}
+footer .footer_third .social_media li a {
+    font-size: 20px;
+}
+
+
+/* Copywrite */
+#copywrite {
+    background-color: var(--third-color);
+    padding: 15px 0;
+}
+#copywrite p {
+    margin-bottom: 0;
+}
+#copywrite a {
+    text-decoration: none;
+    color: var(--first-color);
+}
+
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+    footer {
+        padding: 50px 0;
+    }
+    footer .footer_second {
+        margin-top: 25px;
+    }
+    footer .footer_second ul li {
+        margin: 5px 0;
+    }
+    footer .footer_third {
+        margin-top: 25px;
+    }
+    footer .footer_forth {
+        margin-top: 25px;
+    }
+    #copywrite {
+        padding: 10px 0;
+    }
+}
