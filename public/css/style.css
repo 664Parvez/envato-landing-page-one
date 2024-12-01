@@ -30,6 +30,7 @@ p, span, a {
 h2 {
     font-size: 55px;
     font-weight: 600;
+    margin-top: 30px;
 }
 
 h5 {
@@ -49,10 +50,15 @@ body {
 .btn {
     background: linear-gradient(90deg, var(--second-color), var(--forth-color));
     color: var(--first-color);
+    transition: .5s ease-in-out;
 }
 .btn:hover {
-    background: var(--white-color);
     color: var(--first-color);
+    background: linear-gradient(90deg, var(--forth-color), var(--second-color));
+}
+.btn:hover i {
+    transform: rotate(-30deg);
+    transition: .5s ease-in-out;
 }
 
 
@@ -81,6 +87,33 @@ body {
 }
 
 
+/* Hero */
+#hero {
+    background-image: linear-gradient(120deg, var(--first-color), rgba(0, 0, 0, 0)),url("../image/hero.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+#hero .hero_left_side {
+    padding-top: 150px;
+}
+#hero .hero_left_side h1 {
+    color: var(--white-color);
+    font-size: 70px;
+    font-weight: 600;
+    margin-top: 20px;
+} 
+#hero .hero_left_side p {
+    color: var(--white-color);
+}
+#hero .hero_left_side h6 {
+    color: var(--white-color);
+}
+/* Hero */
+
+
 /* how we work */
 #how_we_work {
     padding: 50px 0;
@@ -96,6 +129,13 @@ body {
     padding: 50px 0;
 }
 /* About Us */
+
+
+/* Service */
+#services {
+    padding: 50px 0;
+}
+/* Service */
 
 
 /* Testimonial */
